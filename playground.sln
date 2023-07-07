@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTTP Status Codes", "HTTP S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunningTotal", "RunningTotal\RunningTotal.csproj", "{F90B82F5-2254-4EFA-B460-1D80133664D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Min, Max and Skip", "Min, Max and Skip\Min, Max and Skip.csproj", "{B6EA972A-24B5-4331-9115-5BA001E10C19}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{F90B82F5-2254-4EFA-B460-1D80133664D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F90B82F5-2254-4EFA-B460-1D80133664D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F90B82F5-2254-4EFA-B460-1D80133664D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6EA972A-24B5-4331-9115-5BA001E10C19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6EA972A-24B5-4331-9115-5BA001E10C19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6EA972A-24B5-4331-9115-5BA001E10C19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6EA972A-24B5-4331-9115-5BA001E10C19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
