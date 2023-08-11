@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Min, Max and Skip", "Min, M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factors", "Factors\Factors.csproj", "{D3ECC87F-BAA6-40CA-8D9F-3D09E5D9FA06}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz", "FizzBuzz\FizzBuzz.csproj", "{C34880C7-5CEE-44E0-A4A8-33B825B6904F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{D3ECC87F-BAA6-40CA-8D9F-3D09E5D9FA06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3ECC87F-BAA6-40CA-8D9F-3D09E5D9FA06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3ECC87F-BAA6-40CA-8D9F-3D09E5D9FA06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C34880C7-5CEE-44E0-A4A8-33B825B6904F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C34880C7-5CEE-44E0-A4A8-33B825B6904F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C34880C7-5CEE-44E0-A4A8-33B825B6904F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C34880C7-5CEE-44E0-A4A8-33B825B6904F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
