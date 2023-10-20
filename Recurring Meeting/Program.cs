@@ -6,9 +6,6 @@ bool ValidValue;
 
 // method
 Meeting MeetingDetails = new Meeting();
-// params
-
-// call previous saves
 
 // start date 
 
@@ -66,14 +63,12 @@ Lists RecLists = new Lists();
 Recurrences rec = new Recurrences(RecLists);
 rec.Daylist(MeetingDetails);
 
-
-
-/* create class "list" 
- * call recurrences method 
- * add date to "list" class 
- * break out of the list when end date is hit
- * save class list to json from "list class"
- * write line "list"
+/* create class "list" - Done 
+ * call recurrences method (program.cs)  - Done 
+ * add dates to "list" class (Depency injection seen on recurrences class) - done  
+ * break out of the list when end date is hit - Done 
+ * save class list to json from "list class" - Done 
+ * write line "list" - Done 
 */
 // save meeting dates 
 
@@ -84,7 +79,6 @@ File.WriteAllText(filepathM, saveM);
 var saveR = JsonSerializer.Serialize(RecLists.Times);
 string filepathR = Environment.ExpandEnvironmentVariables("%Userprofile%\\Documents\\MeetingRecurrences.Json");
 File.WriteAllText(filepathR, saveR);
-
 
 // reviews what is being saved into the json
 Console.WriteLine($"{saveM} {saveR}");
