@@ -12,12 +12,13 @@ Meeting MeetingDetails = new Meeting();
 
 // start date 
 
-Console.WriteLine("Meeting Start Date & Time: ");
-StartDate = Console.ReadLine();
+//Console.WriteLine("Meeting Start Date & Time: ");
+//StartDate = Console.ReadLine();
+StartDate = "2023-09-01 08:00";
 MeetingDetails.setStartDate(StartDate);
 
 // end date 
-ValidValue = false;
+/*ValidValue = false;
 while (ValidValue == false)
 {
     Console.WriteLine("Meeting End Date & time: ");
@@ -28,7 +29,9 @@ while (ValidValue == false)
     {
         Console.WriteLine("Please enter a meeting end date/time greater than the start:  ");
     }
-}
+}*/
+EndDate = "2023-09-01 09:00";
+MeetingDetails.setEndDate(EndDate);
 
 // Frequency 
 
@@ -71,6 +74,9 @@ Console.WriteLine(save);
 //Writes saved json file to class (prints out to console as per saved config details) 
 /*MeetingDetails2 = JsonSerializer.Deserialize<Meeting>(save);
 Console.WriteLine(MeetingDetails2.StartDate1.ToString());*/
+
+Recurrences rec = new Recurrences();
+rec.Daylist(MeetingDetails);
 
 // Print meeting dates 
 /* create class "list" 

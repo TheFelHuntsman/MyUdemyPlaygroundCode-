@@ -26,7 +26,8 @@ namespace Recurring_Meeting
                 meetingendtime = NextMeeting(meetingendtime, value.Freq1);
                 if (!IsWeekday(meetingstarttime))
                 {
-                    while (!IsWeekday(meetingstarttime))
+                    start_EndTimes.Start = meetingstarttime;
+                    while (!IsWeekday(start_EndTimes.Start))
                     {
                         start_EndTimes.Start = meetingstarttime.AddDays(1);
                         start_EndTimes.End = meetingendtime.AddDays(1);
@@ -39,6 +40,8 @@ namespace Recurring_Meeting
                 }
                 
                 Meetinglists.Times.Add(start_EndTimes);
+
+                Console.WriteLine(start_EndTimes.Start);
             }
         }
         // is the entered day a weekday
@@ -75,6 +78,8 @@ namespace Recurring_Meeting
                     case 'y':
                         time = time.AddYears(1);
                             return time;
+                        default:
+                    return time;
                 }
             }
         }
