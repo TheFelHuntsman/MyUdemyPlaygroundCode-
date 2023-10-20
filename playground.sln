@@ -21,11 +21,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTTP Status Codes", "HTTP S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RunningTotal", "RunningTotal\RunningTotal.csproj", "{F90B82F5-2254-4EFA-B460-1D80133664D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Min, Max and Skip", "Min, Max and Skip\Min, Max and Skip.csproj", "{B6EA972A-24B5-4331-9115-5BA001E10C19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Min, Max and Skip", "Min, Max and Skip\Min, Max and Skip.csproj", "{B6EA972A-24B5-4331-9115-5BA001E10C19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factors", "Factors\Factors.csproj", "{D3ECC87F-BAA6-40CA-8D9F-3D09E5D9FA06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Factors", "Factors\Factors.csproj", "{D3ECC87F-BAA6-40CA-8D9F-3D09E5D9FA06}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz", "FizzBuzz\FizzBuzz.csproj", "{C34880C7-5CEE-44E0-A4A8-33B825B6904F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTime", "DateTime\DateTime.csproj", "{C6BC3009-581F-4E76-8B77-C271DDD230FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recurring Meeting", "Recurring Meeting\Recurring Meeting.csproj", "{32CA1E99-6E95-4443-B99D-37EAAA2C55CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +85,14 @@ Global
 		{C34880C7-5CEE-44E0-A4A8-33B825B6904F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C34880C7-5CEE-44E0-A4A8-33B825B6904F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C34880C7-5CEE-44E0-A4A8-33B825B6904F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6BC3009-581F-4E76-8B77-C271DDD230FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6BC3009-581F-4E76-8B77-C271DDD230FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6BC3009-581F-4E76-8B77-C271DDD230FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6BC3009-581F-4E76-8B77-C271DDD230FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32CA1E99-6E95-4443-B99D-37EAAA2C55CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32CA1E99-6E95-4443-B99D-37EAAA2C55CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32CA1E99-6E95-4443-B99D-37EAAA2C55CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32CA1E99-6E95-4443-B99D-37EAAA2C55CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
