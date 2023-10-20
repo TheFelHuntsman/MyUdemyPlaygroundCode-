@@ -9,7 +9,7 @@ namespace Recurring_Meeting
 {
     public class Lists
     {
-        private List<Start_EndTimes> times;
+        private List<Start_EndTimes> times = new List<Start_EndTimes>();
 
         internal List<Start_EndTimes> Times { get => times; set => times = value; }
 

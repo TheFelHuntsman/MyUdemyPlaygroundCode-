@@ -61,6 +61,10 @@ while (ValidValue == false)
     }
 }
 
+var saveM = JsonSerializer.Serialize(MeetingDetails);
+string filepath = Environment.ExpandEnvironmentVariables("%Userprofile%\\Documents\\MeetingMain.Json");
+File.WriteAllText(filepath, saveM);
+
 // Print meeting dates 
 Recurrences rec = new Recurrences();
 rec.Daylist(MeetingDetails);
@@ -73,9 +77,7 @@ rec.Daylist(MeetingDetails);
  * write line "list"
 */
 // save meeting dates 
-var saveM = JsonSerializer.Serialize(MeetingDetails);
-string filepath = Environment.ExpandEnvironmentVariables("%Userprofile%\\Documents\\MeetingMain.Json");
-File.WriteAllText(filepath, saveM);
+
 
 /*var saveR = JsonSerializer.Serialize(MeetingDetails);
 string filepath = Environment.ExpandEnvironmentVariables("%Userprofile%\\Documents\\MeetingRecurrences.Json");
