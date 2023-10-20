@@ -1,12 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Recurring_Meeting
 {
-    internal class Lists
+    public class Lists
     {
+        private List<Start_EndTimes> times;
+
+        internal List<Start_EndTimes> Times { get => times; set => times = value; }
+
     }
+
 }

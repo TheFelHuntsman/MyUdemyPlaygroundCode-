@@ -56,10 +56,10 @@ namespace Recurring_Meeting
             switch (value)
             {
                 case 'Y':
-                    Skip = true;
+                    Skip = false;
                     return true;
                 case 'N':
-                    Skip = false;
+                    Skip = true;
                     return true;
                 default:
                     return false;
