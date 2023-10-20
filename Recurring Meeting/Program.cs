@@ -60,14 +60,13 @@ while (ValidValue == false)
         Console.WriteLine("Please eneter a valid letter [Y)es, (N)o]:");
     }
 }
-
-var saveM = JsonSerializer.Serialize(MeetingDetails);
-string filepath = Environment.ExpandEnvironmentVariables("%Userprofile%\\Documents\\MeetingMain.Json");
-File.WriteAllText(filepath, saveM);
+Lists RecLists = new Lists();
 
 // Print meeting dates 
-Recurrences rec = new Recurrences();
+Recurrences rec = new Recurrences(RecLists);
 rec.Daylist(MeetingDetails);
+
+
 
 /* create class "list" 
  * call recurrences method 
@@ -78,14 +77,17 @@ rec.Daylist(MeetingDetails);
 */
 // save meeting dates 
 
+var saveM = JsonSerializer.Serialize(MeetingDetails);
+string filepathM = Environment.ExpandEnvironmentVariables("%Userprofile%\\Documents\\MeetingMain.Json");
+File.WriteAllText(filepathM, saveM);
 
-/*var saveR = JsonSerializer.Serialize(MeetingDetails);
-string filepath = Environment.ExpandEnvironmentVariables("%Userprofile%\\Documents\\MeetingRecurrences.Json");
-File.WriteAllText(filepath, saveR);
-*/
+var saveR = JsonSerializer.Serialize(RecLists.Times);
+string filepathR = Environment.ExpandEnvironmentVariables("%Userprofile%\\Documents\\MeetingRecurrences.Json");
+File.WriteAllText(filepathR, saveR);
+
 
 // reviews what is being saved into the json
-Console.WriteLine(saveM);
+Console.WriteLine($"{saveM} {saveR}");
 //Meeting MeetingDetails2 = new Meeting();
 //Writes saved json file to class (prints out to console as per saved config details) 
 /*MeetingDetails2 = JsonSerializer.Deserialize<Meeting>(save);

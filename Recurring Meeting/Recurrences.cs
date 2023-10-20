@@ -10,15 +10,22 @@ namespace Recurring_Meeting
 {
     internal class Recurrences
     {
-        Lists Meetinglists = new Lists();
+        private Lists Meetinglists;
         private DateTime meetingstarttime = new DateTime();
         private DateTime meetingendtime = new DateTime();
+
+        public Recurrences(Lists comp)
+        {
+            Meetinglists = comp;
+        }    
+       
         public void Daylist(Meeting value)
         {
             meetingstarttime = value.StartDate1;
             meetingendtime = value.EndDate1;
 
-            // sets the number of loops.
+            Console.WriteLine("Meeting Recurrence dates");
+            // sets the number of loops - Main Reccurences loop.
             for (int i = 1; i <= 11; i++)
             {
                 Start_EndTimes start_EndTimes = new Start_EndTimes();
@@ -39,8 +46,9 @@ namespace Recurring_Meeting
                 }
                 
                 Meetinglists.Times.Add(start_EndTimes);
+
+                Console.WriteLine($"Start date:{start_EndTimes.Start} End Date:{start_EndTimes.End}");
             }
-            Meetinglists.Times.Count();
         }
         // is the entered day a weekday
         private bool IsWeekday(DateTime value)
